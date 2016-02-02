@@ -6,8 +6,6 @@
           <div class="img-wrap">
             <% if item.get('LargeImage/URL').present? %>
               <%= image_tag item.get('LargeImage/URL') %>
-            <% else %>
-              <%= image_tag("no-image.png" , alt: item.get('ItemAttributes/Title')) %>
             <% end %>
           </div>
         </div>
